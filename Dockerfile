@@ -1,6 +1,6 @@
 # docker build -t java_tc_counter .
 
-FROM b359888d8aa2
+FROM gradle:jdk11
 
 WORKDIR /tests
 
