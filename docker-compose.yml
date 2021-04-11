@@ -5,7 +5,7 @@ services:
   selenium:
     image: selenium/standalone-chrome
     container_name: selenium_serv
-    ports: ["4440:4444"]
+    #ports: ["4440:4444"]
     logging:
       driver: none
 
@@ -15,8 +15,10 @@ services:
       dockerfile: ./Dockerfile
     image: java_tests
     container_name: java_container
-    network_mode: "host"
+    #network_mode: "host"
     #depends_on: 
     #  - selenium
+    depends_on: 
+      - selenium
     volumes:
       - ./allure-results:/tests/target/allure-results

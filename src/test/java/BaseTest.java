@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public abstract class BaseTest {
     static {
-        Configuration.remote = "http://localhost:4440/wd/hub";
+        Configuration.remote = "http://selenium:4444/wd/hub";
         Configuration.baseUrl = "https://shop.lifecell.ua/en";
         Configuration.browser = WebDriverRunner.CHROME;
         Configuration.screenshots = true;
