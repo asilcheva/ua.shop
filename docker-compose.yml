@@ -21,4 +21,4 @@ services:
     depends_on: 
       - selenium
     volumes:
-      - ./allure-results:/tests/target/allure-results
+      - ./allure-results:/build/allure-results
